@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+    <title>EcoZon Launcher</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+    <style>
+    html,body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 180px;
+      padding: 0;
+      width: 384px;
+    }
+      h1{
+        font-family: 'Menlo', monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #008000;
+
+      }
+      a:link{
+        color: black;
+        outline: 0;
+        text-decoration: none;
+
+      }
+      .modal-header{
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+      .modal-context{
+        padding: 22px;
+      }
+
+      .logo{
+        padding:16px;
+      }
+      .logo-icon{
+        vertical-align: text-bottom;
+        margin-right: 12px;
+
+      }
+      .version{
+        color: #444;
+        font-size: 18px;
+      }
+      .flex-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+      }
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        
+      }
+      .font:hover{
+        opacity: 0.4;
+      }
+
+      .flex .fa{
+        font-size: 40px;
+        color: #008000;
+      }
+      p {
+        padding-left: 20px
+      }
+      img{
+        width: 30px;
+      }
+
+    </style>
+    <body>
+      <div class="modal-header">
+          <h1 class="logo">
+              <img class="logo-icon" src="images/Artboard-1x128.png">EcoZon Launcher
+              <span class="version">(1.0.0)</span>
+        </h1>
+      </div>
+      <div class="modal-content">
+        <p>Find out whether the items you are purchasing on Amazon are enviornmentally friendly</p>
+      </div>
+      <div class = "modal-icons">
+        <div class="flex-container">
+          <div class="flex">
+            <a href="https://www.ewg.org/about-us" target="_blank">Database used to find this information</a> 
+          </div>
+        </div>
+      </div>
+
+  </body>
+  <script src="popup.js"></script>
+</html>

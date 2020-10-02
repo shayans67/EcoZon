@@ -1,0 +1,43 @@
+  {
+    "name": "EcoZon",
+    "version": "1.0.0",
+    "description": "a chrome extension that rates amazon products based off their environmental friendliness",
+    "permissions": ["activeTab","declarativeContent","storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      
+      "default_icon": {
+        "16": "images/Artboard-1x16.png",
+        "32": "images/Artboard-1x32.png",
+        "48": "images/Artboard-1x48.png",
+        "128": "images/Artboard-1x128.png"
+      }
+
+    },
+    "icons": {
+      "16": "images/Artboard-1x16.png",
+        "32": "images/Artboard-1x32.png",
+        "48": "images/Artboard-1x48.png",
+        "128": "images/Artboard-1x128.png"
+    },
+    "options_page": "options.html",
+
+    "manifest_version": 2,
+    
+    "web_accessible_resources": [
+      "/img/*.png",
+      "/images/*.png"
+    ],
+
+    "content_scripts": [{
+    
+      "js": ["content.js"],
+      "css": ["toolbar.css"],
+      "matches": ["https://www.amazon.com/*"]
+    }]
+  }
+
